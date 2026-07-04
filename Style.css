@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Mulish",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#141E30,#243B55);
+    color:white;
+}
+
+#head{
+    font-size:3rem;
+    margin-bottom:30px;
+    letter-spacing:5px;
+    color:#FFD700;
+}
+
+#result{
+    display:flex;
+    gap:20px;
+    padding:25px;
+    background:#1e293b;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+    margin-bottom:30px;
+}
+
+#result h1{
+    width:80px;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    color:#00ff99;
+    font-size:2.5rem;
+    border-radius:15px;
+    border:2px solid #00ff99;
+    transition:.2s;
+}
+
+#result h1:hover{
+    transform:scale(1.05);
+}
+
+#black_money{
+    width:280px;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:1rem;
+    text-align:center;
+    background:white;
+    color:#111;
+    margin-bottom:20px;
+}
+
+#gamble{
+    padding:14px 40px;
+    border:none;
+    border-radius:12px;
+    background:#00c853;
+    color:white;
+    font-size:1.1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+#gamble:hover{
+    background:#00a844;
+    transform:translateY(-2px);
+}
+
+#gamble:active{
+    transform:scale(.97);
+}
+
+#gamble:disabled{
+    background:#666;
+    cursor:not-allowed;
+}
+
+#money{
+    margin-top:25px;
+    font-size:2rem;
+    color:#00ff99;
+}
+
+#phal{
+    margin-top:15px;
+    font-size:1.6rem;
+    color:#FFD700;
+    text-align:center;
+}
+
+@media(max-width:600px){
+
+    #head{
+        font-size:2.2rem;
+    }
+
+    #result{
+        gap:12px;
+        padding:18px;
+    }
+
+    #result h1{
+        width:65px;
+        height:65px;
+        font-size:2rem;
+    }
+
+    #black_money{
+        width:240px;
+    }
+
+    #money{
+        font-size:1.5rem;
+    }
+
+    #phal{
+        font-size:1.3rem;
+    }
+}
